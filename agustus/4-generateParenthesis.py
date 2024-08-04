@@ -1,5 +1,5 @@
+# https://leetcode.com/problems/generate-parentheses/
 from typing import List
-from collections import deque
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         stack = []
