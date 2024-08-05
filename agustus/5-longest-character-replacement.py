@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/longest-repeating-character-replacement/description/
 from typing import List
 from collections import defaultdict, deque
 class Solution:
