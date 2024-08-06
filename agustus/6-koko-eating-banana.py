@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/koko-eating-bananas/description/
 from typing import List
 from collections import defaultdict, deque
 from math import ceil
