@@ -15,7 +15,6 @@ class Solution:
             c = max(dp_inc, dp_ninc)
             d = max(dp_inc_n0, dp_ninc_n0)
             dp_inc, dp_inc_n0, dp_ninc, dp_ninc_n0 = a,b,c,d
-            print(a,b,c,d)
 
         lastIdx = len(nums) - 1
         b = nums[lastIdx] + dp_ninc_n0

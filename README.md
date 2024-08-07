@@ -6,7 +6,7 @@
 - https://neetcode.io/practice (Blind 75 & Neetcode 150)
 
 target by April 2025 (DSA & SQL):
-200 Medium
+250 Medium
 50 Hard
 
 time taken target by April:
