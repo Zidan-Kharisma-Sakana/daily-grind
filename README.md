@@ -1,4 +1,4 @@
-# study plan for 2025 hiring season
+# study plan
 ## sources:
 - https://leetcode.com/studyplan/top-interview-150/
 - https://leetcode.com/studyplan/leetcode-75/
