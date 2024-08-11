@@ -4,11 +4,15 @@
 - https://leetcode.com/studyplan/leetcode-75/
 - https://leetcode.com/studyplan/top-sql-50/
 - https://neetcode.io/practice (Blind 75 & Neetcode 150)
+- https://leetcode.com/problemset/concurrency/ 
+- https://leetcode.com/problemset/database/
 
-target by April 2025 (DSA & SQL):
+
+target by May 2025 (DSA):
 100 Easy
 200 Medium
 50 Hard
+50 Misc(SQL & Concurrency)
 
 time taken target by April:
 Medium: 20 minutes
