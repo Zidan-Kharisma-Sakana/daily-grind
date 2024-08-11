@@ -9,10 +9,10 @@
 
 
 target by May 2025 (DSA):
-100 Easy
-200 Medium
-50 Hard
-50 Misc(SQL & Concurrency)
+- 100 Easy
+- 200 Medium
+- 50 Hard
+- 50 Misc(SQL & Concurrency)
 
 time taken target by April:
 Medium: 20 minutes
