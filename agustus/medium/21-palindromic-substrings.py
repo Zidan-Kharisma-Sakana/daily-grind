@@ -25,8 +25,6 @@ class Solution:
                 else:
                     break
             dp[i] += count
-        
-        # print(dp)
         return sum(dp)
 solution = Solution()
 
