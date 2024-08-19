@@ -1,27 +1,25 @@
+# https://leetcode.com/problems/reverse-linked-list/
+from typing import List, Optional
+# Definition for singly-linked list.
+from helper import Helper
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 class Solution:
-    def isValid(self, s: str) -> bool:
-        opening = ["(", "{", "["]
-        closures = [")", "}", "]"]
-        couples = [("(", ")"), ("{", "}"), ("[", "]")]
-        stack = []
-        for idx, curr in enumerate(s):
-            if len(stack) == 0:
-                if curr in closures:
-                    return False
-                stack.append(curr)
-            else:
-                prev = stack[len(stack)-1]
-                flag = False
-                for couple in couples:
-                    if prev == couple[0] and curr == couple[1]:
-                        stack.pop()
-                        flag = True
-                        break
-                if not flag:
-                    stack.append(curr)
-        return len(stack) == 0
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head: return head
+        prev, next, curr = None, None, head
+        while curr :
+            next = curr.next
+            curr.next = prev
+            prev = curr
+            curr = next
 
+        return prev
 input = \
-"(){[]}"
+[7,6,4,3,1]
+input2 = \
+2
 s = Solution()
-print(s.isValid(input))
+print(s.maxProfit(input))
