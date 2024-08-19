@@ -1,7 +1,14 @@
-# https://leetcode.com/problems/diameter-of-binary-tree/description/
+# https://leetcode.com/problems/reverse-linked-list/
 from typing import List, Optional
 from utils.helper import TreeNode, Helper
+# Definition for singly-linked list.
 
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
 class Solution:
     def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
         def recurse(curr: Optional[TreeNode]) -> int:

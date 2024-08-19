@@ -12,9 +12,7 @@ class TreeNode:
         self.right = right
               
 class Helper:
-    def __init__(self):
-        pass
-    
+    @staticmethod
     def list_to_linked_list(values):
         if not values:
             return None
@@ -25,6 +23,8 @@ class Helper:
             current = current.next
         return head
     
+    
+    @staticmethod
     def linked_list_to_list(head):
         values = []
         current = head
@@ -35,6 +35,8 @@ class Helper:
 
         return values
     
+    
+    @staticmethod
     def list_to_tree(values):
         if not values:
             return None
@@ -58,6 +60,8 @@ class Helper:
 
         return root
     
+    
+    @staticmethod
     def tree_to_list(root):
         if not root:
             return []
@@ -79,3 +83,18 @@ class Helper:
             result.pop()
 
         return result
+    
+    
+    @staticmethod
+    def print_tree(root, level=0, prefix="Root: "):
+        if root is not None:
+            print(" " * (level * 4) + prefix + str(root.val))
+            if root.left or root.right:
+                if root.left:
+                    Helper.print_tree(root.left, level + 1, "L--- ")
+                else:
+                    print(" " * ((level + 1) * 4) + "L--- None")
+                if root.right:
+                    Helper.print_tree(root.right, level + 1, "R--- ")
+                else:
+                    print(" " * ((level + 1) * 4) + "R--- None")
