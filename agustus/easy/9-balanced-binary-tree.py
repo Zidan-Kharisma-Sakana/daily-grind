@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/merge-two-sorted-lists/description/
+# https://leetcode.com/problems/balanced-binary-tree/description/
 from typing import List, Optional
 from utils.helper import ListNode, Helper, TreeNode
 from typing import List
