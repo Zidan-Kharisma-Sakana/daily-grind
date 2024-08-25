@@ -7,7 +7,6 @@ class Solution:
         chars = list(s)
         l, r = 0, 0
         mx = 0
-        ans = 0
         while r < len(chars):
             ordIdx = ord(chars[r]) - ord("A")
             d[ordIdx] += 1
