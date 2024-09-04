@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/hand-of-straights/description/
 from collections import defaultdict
 from typing import List
 from heapq import heapify, heappop
@@ -10,22 +11,23 @@ class Solution:
         for i in hand:
             d[i]+=1
         heapify(hand)
-        
-        while groupSize > 0 and len(d) > 0:
-            print(hand)
-            if hand[0] not in d:
+        while groupSize > 0 and len(d) > 0 and len(hand) > 0:
+            if d[hand[0]] == 0:
                 heappop(hand)
             else:
-                start = hand[0]
+                start = heappop(hand)
                 for i in range(groupSize):
-                    if d[start+1] == 0:
+                    if d[start+i] == 0:
+                        print(start, i)
+                        print(d[start+i])
                         return False
-                    d[start+1] -= 1
+                    d[start+i] -= 1
         return True
             
 
 input1 = \
-    [1,2,3,6,2,3,4,7,8]
+    [1,8,4,6,2,3,3,7,2]
 input2 = \
     3
 result = Solution().isNStraightHand(input1, input2)
+print(result)
