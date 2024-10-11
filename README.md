@@ -8,7 +8,7 @@
 - https://leetcode.com/problemset/database/
 
 
-target by May 2025 (DSA):
+target by July 2025 (DSA):
 - 100 Easy
 - 200 Medium
 - 50 Hard
