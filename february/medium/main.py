@@ -5,13 +5,7 @@ from typing import List
 
 class Solution:
     def clearDigits(self, s: str) -> str:
-        stack = []
-        for i in s:
-            if i.isnumeric() and len(stack) > 0:
-                stack.pop()
-            else:
-                stack.append(i)
-        return "".join(stack)
+        pass
 
 input = \
 "cba34"
